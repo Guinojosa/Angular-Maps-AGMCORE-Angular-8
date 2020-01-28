@@ -20,7 +20,7 @@ import { MapsAgmDraggableComponent } from 'src/components/maps-components/maps-a
     CommonModule,
     MapsAgmRoutingModule,   
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBHya9mV4ghXHRJ22rdbDliqBLXbUHG2Gs',
+      apiKey: 'Your Module',
       libraries: ['places']
     })
   ]
