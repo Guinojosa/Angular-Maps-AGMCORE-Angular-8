@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: ``,
     loadChildren: () =>
-    import(`src/app/Maps/maps.module`).then(
+    import(`src/app/modules/Maps/maps.module`).then(
       m => m.MapsModule
     )
   }

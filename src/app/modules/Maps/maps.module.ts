@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { AgmCoreModule } from '@agm/core';
 
 import { MapsAgmRoutingModule } from './maps-routing.module';
-import { MapsComponent } from './principal/maps.component';
-import { MapsAgmPlacesApiComponent } from 'src/components/maps-components/maps-agm-places-api/maps-agm-places-api.component';
-import { MapsAgmSimpleComponent } from 'src/components/maps-components/maps-agm-simple/maps-agm-simple.component';
-import { MapsAgmDraggableComponent } from 'src/components/maps-components/maps-agm-draggable/maps-agm-draggable.component';
+import { MapsComponent } from '././page/maps.component';
+import { MapsAgmPlacesApiComponent } from 'src/app/components/maps-components/maps-agm-places-api/maps-agm-places-api.component';
+import { MapsAgmSimpleComponent } from 'src/app/components/maps-components/maps-agm-simple/maps-agm-simple.component';
+import { MapsAgmDraggableComponent } from 'src/app/components/maps-components/maps-agm-draggable/maps-agm-draggable.component';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { MapsAgmDraggableComponent } from 'src/components/maps-components/maps-a
     CommonModule,
     MapsAgmRoutingModule,   
     AgmCoreModule.forRoot({
-      apiKey: 'Your Module',
+      apiKey: '',
       libraries: ['places']
     })
   ]
