@@ -1,0 +1,22 @@
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-8">
+            <input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search"
+                type="text" #search>
+        </div>
+        <div class="col-md-4">
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                    <input type="radio" name="address" id="address" (click)="changeTypeSearch('address')"checked> Address
+                </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="establishment" id="establishment" (click)="changeTypeSearch('establishment')"> Establishment
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker>
+</agm-map>
